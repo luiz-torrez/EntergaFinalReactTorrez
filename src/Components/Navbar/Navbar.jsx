@@ -1,17 +1,17 @@
 import React from 'react'
 import './Navbar.css'
 import CartWidget from '../CartWidget'
+import { Link } from 'react-router-dom'
 
 const Navbar = () => {
   return (
     <header className="herader">
-        <a href="/" className='logo'>M.Movil</a>
+        <Link to='/' className="logo">M.Movil</Link >
         <nav className="navbar">
-            <a href='/' className="nav-text">Home</a>
-            <a href='/' className="nav-text">Servicios</a>
-            <a href='/' className="nav-text">Productos</a>
-            <a href='/' className="nav-text">Contactos</a>
-            <a href='/' className="nav-text">Ayuda</a>
+            <Link to='/samsung' className="nav-text">Samsung</Link>
+            <Link to='/xiaomi' className="nav-text">Xiaomi</Link>
+            <Link to='/iphone' className="nav-text">Iphone</Link>
+            <Link to='/motorola' className="nav-text">Motorola</Link>
         </nav>
         <CartWidget/>
     </header>
