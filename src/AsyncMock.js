@@ -177,6 +177,6 @@ export const getProducts = new Promise((resolve) => {
 export const getProduct = (id) =>{
     return products.find((prod) =>prod.id == id);
 };
-export const getCategory = (category) => {
+export const getCategory = (categoryId) => {
     return products.filter((product)=> product.category === categoryId)
 }

@@ -4,7 +4,6 @@ import { useParams } from "react-router-dom";
 
 const IphoneView = () => {
   const{categoryId}=useParams();
-  
 
   return (
     <div>

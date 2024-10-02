@@ -14,10 +14,10 @@ const App = () => {
   <div >
       <Navbar /><Routes>
       <Route exact path = "/"element={<HomeView/>}/>
-      <Route exact path = "/samsung"element={<SamsungView/>}/>
-      <Route exact path = "/iphone"element={<IphoneView/>}/>
-      <Route exact path = "/xiaomi"element={<XiaomiView/>}/>
-      <Route exact path = "/motorola/:categoryId"element={<MotorolaView/>}/>
+      <Route exact path = "/samsung/:categoryId"element={<SamsungView/>}/>
+      <Route exact path = "/categories/:categoryId"element={<IphoneView/>}/>
+      <Route exact path = "/xiaomi/:categoryId"element={<XiaomiView/>}/>
+      <Route exact path = "/categories/:categoryId"element={<MotorolaView/>}/>
       <Route exact path = "/product/:id"element={<ProductView/>}/>
     </Routes>
     </div></BrowserRouter>
