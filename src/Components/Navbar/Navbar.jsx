@@ -11,7 +11,7 @@ const Navbar = () => {
             <Link to='/categories/Samsung' className="nav-text">Samsung</Link>
             <Link to='/categories/Xiaomi' className="nav-text">Xiaomi</Link>
             <Link to='/categories/Iphone' className="nav-text">Iphone</Link>
-            <Link to={`/categories/Motorola`} className="nav-text">Motorola</Link>
+            <Link to='/categories/Motorola' className="nav-text">Motorola</Link>
         </nav>
         <CartWidget/>
     </header>

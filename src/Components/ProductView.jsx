@@ -1,6 +1,4 @@
-import './ProductCard.css'
 import { Link, useParams } from "react-router-dom";
-import { getProduct } from '../AsyncMock';
 import { useEffect, useState } from 'react';
 
 
@@ -14,6 +12,7 @@ export default function ProductView({}){
 
   useEffect(()=>{
     setProduct(getProduct(id))
+    
   },[]);
   
 

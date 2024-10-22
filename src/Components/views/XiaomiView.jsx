@@ -1,11 +1,12 @@
 import React from 'react'
-import ProductsList from '../ProductsList'
+// import ProductsList from '../ProductsList'
+import ItemListContainer from '../Item/ItemListContatiner'
 
 const XiaomiView = () => {
   return (
     <div>
       <h2>xiaomi</h2>
-      <section><ProductsList/></section>
+      <section><ItemListContainer/></section>
     </div>
   )
 }

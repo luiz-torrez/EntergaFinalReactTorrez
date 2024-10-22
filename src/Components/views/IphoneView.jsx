@@ -1,6 +1,7 @@
 import React from 'react'
-import ProductsList from '../ProductsList'
+// import ProductsList from '../ProductsList'
 import { useParams } from "react-router-dom";
+import ItemListContainer from '../Item/ItemListContatiner';
 
 const IphoneView = () => {
   const{categoryId}=useParams();
@@ -8,7 +9,7 @@ const IphoneView = () => {
   return (
     <div>
       <h2>iphone</h2>
-      <section><ProductsList/></section>
+      <section><ItemListContainer/></section>
     </div>
   )
 }

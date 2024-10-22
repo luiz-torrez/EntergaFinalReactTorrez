@@ -1,12 +1,14 @@
 import React from 'react'
-import ProductsList from '../ProductsList'
+import ItemListContainer from '../Item/ItemListContatiner'
+// import ProductsList from '../ProductsList'
 
 
 const HomeView = () => {
   return (
     <div>
       <h2>Celulares</h2>
-      <section><ProductsList /></section>
+      <section><ItemListContainer />
+      </section>
       
       
     </div>

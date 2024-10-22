@@ -1,8 +1,16 @@
+import { useContext } from "react";
+import { CartContext } from "../context/CartContext";
+
 export default function CartWidget(){
-    return <>
-    <button className="cesta-carrito">
+  const [cart] = useContext(CartContext);
+
+    return (<><section><button className="cesta-carrito">
       <i className="fa-solid fa-cart-shopping"></i>
-      <span className="contador-carrito">2</span>
     </button>
-    </>;
+    <p className="contador-carrito">{cart.length}</p>
+    </section>
+    
+    
+    
+    </>);
 }
