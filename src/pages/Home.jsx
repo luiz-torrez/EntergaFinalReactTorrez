@@ -1,10 +1,12 @@
 import ItemConteiner from "../components/Items/ItemContainer"
 
-const Home = () => {
+const Home =()=>{
   return (
-    <div style={{ display: "flex" }}>
+    <><div>
       <ItemConteiner/>
+      <h2>ItemContainer</h2>
     </div>
+    </>
   );
 };
 export default Home;
