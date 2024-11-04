@@ -3,14 +3,10 @@ import { CartContext } from "../../context/CartContext";
 
 
 const Item = ({ product }) => {
-console.log('sin problemas')
-  // const [, , addItem] = useContext(CartContext);
 
-  // const handleClick = () => {
-  //   addItem(cancion);
-  // };
 
-  // console.log('sin problemas')
+
+
 
 
 
@@ -19,6 +15,7 @@ console.log('sin problemas')
           <h4>{product.nombre}</h4>
           <img src={product.img} alt={product.nombre} />
           <div className='contenido'>
+            <p>Categoria {product.category}</p>
             <p>Precio ${product.precio}</p>
             <button><Link to= {`/Detail/${product.id}`}>Detalle</Link></button>
             {/* <button onClick={handleClick}>Comprar</button>  	 */}

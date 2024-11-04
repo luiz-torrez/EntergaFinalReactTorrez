@@ -2,13 +2,46 @@ import { useContext } from "react";
 import { ProductsContext } from "../../context/ProductContext";
 import Loading from "../Loading/Loading"
 import Item from "./Item";
+import "./item.css";
+import { useParams } from "react-router-dom";
+import { useEffect } from "react";
+import { collection,getDocs, query, where } from "firebase/firestore";
+import { db } from "../../db/db";
+import { useState } from "react";
+
 
 const ItemConteiner = () => {
-    const { products, cargando } = useContext (ProductsContext);
+    const {cargando } = useContext (ProductsContext);
+    const [products, setProducts] = useState([]);
+    const category = useParams().category;
     
-  console.log('sin products')
+
+
+
+    
+    useEffect(() => {
+
+      const songsRef = collection(db, "products");
+      const q = category ? query(songsRef, where("category", "==", category)) : songsRef;
+
+      getDocs(q)
+        .then((responseDb) => {
+
+          setProducts(
+            responseDb.docs.map((doc) => {
+              return { ...doc.data(), id: doc.id }
+            })
+          )
+        })
+        
+    }, [category])
+
+
+
+
+
     return (
-      <article className="">
+      <article className="conteiner">
         {cargando ? (
           <Loading />
         ) : (products &&

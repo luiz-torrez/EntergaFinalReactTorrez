@@ -3,7 +3,8 @@ import ItemConteiner from "../components/Items/ItemContainer"
 
 const Iphone =()=>{
     return (
-      <><div>
+      <><h3>Iphone</h3>
+      <div>
         <ItemConteiner/>
       </div>
       </>

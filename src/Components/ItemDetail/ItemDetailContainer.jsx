@@ -15,6 +15,7 @@ const ItemDetailContainer = ({ idSong }) => {
         .finally(() => setLoading(false));
     }, []);
   
-    return <>{loading ? <Loading /> : <ItemDetail product={product} />}</>;
+    return <><article className="conteiner">{loading ? <Loading /> : <ItemDetail product={product} />}</article>
+    </>;
   };
   export default ItemDetailContainer;

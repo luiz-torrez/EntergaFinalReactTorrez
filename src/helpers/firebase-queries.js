@@ -32,15 +32,6 @@ export const getSongsByGenre = async (genre) => {
   return songs;
 }
 
-export const getSongsByYear = async (year) => {
-  const q = query(songsRef, where("año_lanzamiento", "<=", Number(year)))
-  const responseDb = await getDocs(q);
-  const songs = responseDb.docs.map((doc) => ({
-    id: doc.id,
-    ...doc.data()
-  }));
-  return songs;
-}
 
 export const getSongById = async (idSong) => {
   const songRef = doc(db, "products", idSong)
@@ -49,17 +40,6 @@ export const getSongById = async (idSong) => {
   return song
 }
 
-// export const getCommentsByIdSong = async (idSong) => {
-//   const songRef = doc(db, "products", idSong)
-//   const collectionComments = collection(songRef, "comentarios")
-//   const q = query(collectionComments)
-//   const responseDb = await getDocs(q);
-//   const comments = responseDb.docs.map((doc) => ({
-//     id: doc.id,
-//     ...doc.data()
-//   }));
-//   return comments;
-// }
 
 
 

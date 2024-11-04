@@ -4,7 +4,8 @@ import ItemConteiner from "../components/Items/ItemContainer";
 
 const Xiaomi =()=>{
     return (
-      <><div>
+      <><h3>Xiaomi</h3>
+      <div>
         <ItemConteiner/>
       </div>
       </>

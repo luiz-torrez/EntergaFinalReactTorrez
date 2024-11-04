@@ -8,6 +8,8 @@ export const ProductsProvider = ({ children }) => {
   const [products, setProducts] = useState([]);
   const [cargando, setCargando] = useState(false);
   const [categorys, setCategorys] = useState([]);
+  
+
 
   useEffect(() => {
     setCargando(true);
@@ -27,6 +29,22 @@ export const ProductsProvider = ({ children }) => {
   const obtenerCategorys = () => {
     getGenres().then((categorysDb) => setCategorys([...categorysDb]));
   };
+  // useEffect(() => {
+
+  //   const productosRef = collection(db, "products");
+  //   const q = category ? query(productosRef, where("category", "==", category)) : productosRef;
+
+  //   getDocs(q)
+  //     .then((resp) => {
+
+  //       setProducts(
+  //         resp.docs.map((doc) => {
+  //           return { ...doc.data(), id: doc.id }
+  //         })
+  //       )
+  //     })
+      
+  // }, [category])
 
 
 

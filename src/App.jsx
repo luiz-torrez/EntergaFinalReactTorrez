@@ -24,12 +24,18 @@ const App = () => {
       
       <Routes>
         <Route exact path = "/"element={<Home/>}/>
-        <Route exact path = "/categories/:categoryId"element={<Samsung/>}/>        
-        <Route exact path = "/categories/:categoryId"element={<Iphone/>}/>
-        <Route exact path = "/categories/:categoryId"element={<Xiaomi/>}/>
-        <Route exact path = "/categories/:categoryId"element={<Motorola/>}/>
-        <Route exact path = "/product/:idSong"element={<Detail/>}/>
-        <Route exact path = '/checkout'element={<Checkout/>}/>
+
+        <Route exact path = '/categories/:category' element={<Samsung/>}/> 
+              
+        <Route exact path = '/categories/:category' element={<Iphone/>}/>
+
+        <Route exact path = '/categories/:category' element={<Xiaomi/>}/>
+
+        <Route exact path = '/categories/:category' element={<Motorola/>}/>
+        
+        <Route exact path = '/Detail/:idSong' element={<Detail/>}/>
+
+        <Route exact path = '/checkout' element={<Checkout/>}/>
 
       </Routes>
       </CartProvider>

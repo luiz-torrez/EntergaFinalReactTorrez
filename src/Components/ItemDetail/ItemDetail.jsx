@@ -6,6 +6,7 @@ const ItemDetail = ({ product }) => {
 
 
     return (
+
       <article className='card'>
       <h4>{product.nombre}</h4>
       <img src={product.img} alt={product.nombre} />

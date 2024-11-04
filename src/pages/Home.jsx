@@ -2,9 +2,12 @@ import ItemConteiner from "../components/Items/ItemContainer"
 
 const Home =()=>{
   return (
-    <><div>
+    <>
+    <h3>Home</h3>
+    <div>
+      
       <ItemConteiner/>
-      <h2>ItemContainer</h2>
+      
     </div>
     </>
   );
