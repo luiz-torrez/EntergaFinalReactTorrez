@@ -1,16 +1,16 @@
 import Item from "../Items/Item";
 import { useEffect, useState } from "react";
 import Loading from "../Loading/Loading";
-import { getSongById } from "../../helpers/firebase-queries";
+import { getItemById } from "../../helpers/firebase-queries";
 import ItemDetail from "./ItemDetail";
 
-const ItemDetailContainer = ({ idSong }) => {
+const ItemDetailContainer = ({ idItem }) => {
     const [product, setproduct] = useState({});
     const [loading, setLoading] = useState(false);
   
     useEffect(() => {
       setLoading(true);
-      getSongById(idSong)
+      getItemById(idItem)
         .then((data) => setproduct(data))
         .finally(() => setLoading(false));
     }, []);

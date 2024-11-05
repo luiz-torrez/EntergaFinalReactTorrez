@@ -6,11 +6,12 @@ import ItemDetailContainer from "../components/ItemDetail/ItemDetailContainer";
 
 const Detail =()=>{
 
-  const{idSong} = useParams();
+  const{idItem} = useParams();
+
 
     return (
       <><div>
-        < ItemDetailContainer idSong={idSong}/>
+        < ItemDetailContainer idItem={idItem}/>
       </div>
       </>
     );

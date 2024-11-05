@@ -10,6 +10,7 @@ import Motorola from './pages/Motorola';
 import Samsung from './pages/Samsung';
 import Detail from './pages/Detail';
 import Checkout from './pages/Checkout';
+import Carrito from './pages/Carrito';
 
 
 
@@ -33,9 +34,11 @@ const App = () => {
 
         <Route exact path = '/categories/:category' element={<Motorola/>}/>
         
-        <Route exact path = '/Detail/:idSong' element={<Detail/>}/>
+        <Route exact path = '/Detail/:idItem' element={<Detail/>}/>
 
         <Route exact path = '/checkout' element={<Checkout/>}/>
+
+        <Route exact path = '/carrito' element={<Carrito/>}/>
 
       </Routes>
       </CartProvider>

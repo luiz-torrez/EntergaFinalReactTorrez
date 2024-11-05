@@ -16,13 +16,10 @@ const ItemConteiner = () => {
     const category = useParams().category;
     
 
-
-
-    
     useEffect(() => {
 
-      const songsRef = collection(db, "products");
-      const q = category ? query(songsRef, where("category", "==", category)) : songsRef;
+      const itemsRef = collection(db, "products");
+      const q = category ? query(itemsRef, where("category", "==", category)) : itemsRef;
 
       getDocs(q)
         .then((responseDb) => {
@@ -35,9 +32,6 @@ const ItemConteiner = () => {
         })
         
     }, [category])
-
-
-
 
 
     return (
