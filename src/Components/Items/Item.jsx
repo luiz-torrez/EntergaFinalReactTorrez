@@ -8,7 +8,7 @@ const Item = ({ product }) => {
 
 
   const { carrito, agregarAlCarrito } = useContext(CartContext);
-  console.log(carrito);
+  
 
   const [cantidad, setCantidad] = useState(1);
 

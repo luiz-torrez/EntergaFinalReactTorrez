@@ -22,7 +22,7 @@ const Checkout = () => {
         }
         console.log(pedido);
 
-        const pedidosRef = collection(db, "pedidos");
+        const pedidosRef = collection(db, "orders");
 
         addDoc(pedidosRef, pedido)
             .then((doc) => {
