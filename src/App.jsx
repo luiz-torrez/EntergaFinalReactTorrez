@@ -9,7 +9,7 @@ import Iphone from './pages/Iphone';
 import Motorola from './pages/Motorola';
 import Samsung from './pages/Samsung';
 import Detail from './pages/Detail';
-import Checkout from './pages/Checkout';
+import Checkout from './components/Checkout/Checkout';
 import Carrito from './pages/Carrito';
 
 

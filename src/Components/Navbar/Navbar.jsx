@@ -1,8 +1,8 @@
 import { Link } from "react-router-dom";
-
 import CartWidget from "../CartWidget/CartWidget";
-
 import "./navbar.css";
+import { ToastContainer, toast } from 'react-toastify';
+import 'react-toastify/dist/ReactToastify.css';
 
 const NavBar = () => {
 
@@ -16,6 +16,7 @@ const NavBar = () => {
         <Link to='/categories/Motorola' className="nav-text">Motorola</Link>
     </nav>
     <CartWidget/>
+    <ToastContainer />
 </header>
   );
 };

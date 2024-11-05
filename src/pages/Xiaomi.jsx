@@ -1,12 +1,12 @@
-import ItemConteiner from "../components/Items/ItemContainer";
+import ItemListConteiner from "../components/Items/ItemListContainer";
 
 
 
 const Xiaomi =()=>{
     return (
-      <><h3>Xiaomi</h3>
+      <>
       <div>
-        <ItemConteiner/>
+        <ItemListConteiner/>
       </div>
       </>
     );

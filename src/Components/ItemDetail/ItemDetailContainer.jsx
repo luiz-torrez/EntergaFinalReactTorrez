@@ -1,4 +1,4 @@
-import Item from "../Items/Item";
+import ItemList from "../Items/ItemList";
 import { useEffect, useState } from "react";
 import Loading from "../Loading/Loading";
 import { getItemById } from "../../helpers/firebase-queries";

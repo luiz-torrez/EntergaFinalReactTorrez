@@ -1,9 +1,10 @@
 import React, { useContext, useState } from 'react';
-import { CartContext } from '../context/CartContext';
+import { CartContext } from '../../context/CartContext';
 import { useForm } from 'react-hook-form';
 import { collection, addDoc } from "firebase/firestore";
-import { db } from '../db/db';
-import "../App.css";
+import { db } from '../../db/db'; 
+import {ToastContainer, toast } from 'react-toastify';
+import 'react-toastify/dist/ReactToastify.css';
 
 const Checkout = () => {
 
@@ -18,9 +19,20 @@ const Checkout = () => {
         const pedido = {
             cliente: data,
             productos: carrito,
-            total: precioTotal()
+            total: precioTotal(),
+            date: new Date()
         }
         console.log(pedido);
+        toast('Compra realizada', {
+            position: "top-right",
+            autoClose: 2000,
+            hideProgressBar: false,
+            closeOnClick: true,
+            pauseOnHover: true,
+            draggable: true,
+            progress: undefined,
+            theme: "light",           
+            });
 
         const pedidosRef = collection(db, "orders");
 

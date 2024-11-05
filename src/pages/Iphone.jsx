@@ -1,11 +1,11 @@
-import ItemConteiner from "../components/Items/ItemContainer"
+import ItemListConteiner from "../components/Items/ItemListContainer"
 
 
 const Iphone =()=>{
     return (
-      <><h3>Iphone</h3>
+      <>
       <div>
-        <ItemConteiner/>
+        <ItemListConteiner/>
       </div>
       </>
     );

@@ -1,4 +1,4 @@
-import ItemConteiner from "../components/Items/ItemContainer"
+import ItemListConteiner from "../components/Items/ItemListContainer"
 
 const Home =()=>{
   return (
@@ -6,7 +6,7 @@ const Home =()=>{
     <h3>Home</h3>
     <div>
       
-      <ItemConteiner/>
+      <ItemListConteiner/>
       
     </div>
     </>

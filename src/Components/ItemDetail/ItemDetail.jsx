@@ -5,7 +5,7 @@ import ItemCount from "../../pages/ItemCount";
 const ItemDetail = ({ product}) => {
 
 
-  const { carrito, agregarAlCarrito } = useContext(CartContext);
+  const { agregarAlCarrito } = useContext(CartContext);
 
   const [cantidad, setCantidad] = useState(1);
 

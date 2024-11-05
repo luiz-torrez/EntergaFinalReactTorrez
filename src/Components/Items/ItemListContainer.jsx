@@ -1,7 +1,7 @@
 import { useContext } from "react";
 import { ProductsContext } from "../../context/ProductContext";
 import Loading from "../Loading/Loading"
-import Item from "./Item";
+import ItemList from "./ItemList";
 import "./item.css";
 import { useParams } from "react-router-dom";
 import { useEffect } from "react";
@@ -10,7 +10,7 @@ import { db } from "../../db/db";
 import { useState } from "react";
 
 
-const ItemConteiner = () => {
+const ItemListConteiner = () => {
     const {cargando } = useContext (ProductsContext);
     const [products, setProducts] = useState([]);
     const category = useParams().category;
@@ -39,9 +39,9 @@ const ItemConteiner = () => {
         {cargando ? (
           <Loading />
         ) : (products &&
-          products.map((product) => <Item key={product.id} product={product} />)
+          products.map((product) => <ItemList key={product.id} product={product} />)
         )}
       </article>
     );
   };
-  export default ItemConteiner;
+  export default ItemListConteiner;

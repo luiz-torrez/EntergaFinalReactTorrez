@@ -1,13 +1,12 @@
-import ItemConteiner from "../components/Items/ItemContainer";
-import { useParams } from "react-router-dom";
+import ItemListConteiner from "../components/Items/ItemListContainer";
 
 const Samsung =()=>{
   
   
     return (
-      <><h3>Samsung</h3>
+      <><h3>Categoria</h3>
       <div>
-        <ItemConteiner/>
+        <ItemListConteiner/>
       </div>
       </>
     );
