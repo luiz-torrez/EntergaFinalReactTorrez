@@ -3,7 +3,7 @@ import {ProductsProvider} from "./context/ProductContext"
 import { BrowserRouter, Routes ,Route } from 'react-router-dom';
 import { CartProvider } from './context/CartContext';
 import NavBar from './Components/Navbar/Navbar';
-import Home from './pages/home';
+import Home from './pages/Home';
 import Xiaomi from './pages/Xiaomi';
 import Iphone from './pages/Iphone';
 import Motorola from './pages/Motorola';
